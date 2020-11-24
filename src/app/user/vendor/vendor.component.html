@@ -1,0 +1,83 @@
+<head>
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div class="form-container">
+    <!--<img class="wave" src="assets/wave.png">-->
+   
+	<div class="container">
+		<div class="img">
+           
+			<img src="assets/newvendor.svg">
+		</div>
+    <form [formGroup]="registerForm" (ngsubmit)="userRegister()">
+        
+        <div class="form-group">
+            
+            <label for="name">name</label>
+            <input
+      type="text"
+      placeholder="Enter  Name"
+      formControlName="name"
+    />
+        </div>
+        <span><div class="form-group">
+            <label for="email">email</label>
+            <input
+      type="email"
+      placeholder="Enter  Email"
+      formControlName="email"
+    />
+        </div></span>
+        <div class="form-group">
+            <label for="address">address</label>
+            <input
+      type="text"
+      placeholder="Enter  address"
+      formControlName="address"
+    />
+        </div>
+        <div class="form-group">
+            <label for="state">state</label>
+            <input
+      type="text"
+      placeholder="Enter  state"
+      formControlName="state"
+    />
+        </div>
+        <div class="form-group">
+            <label for="number">ContactNumber</label>
+            <input
+      type="text"
+      placeholder="Enter ContactNumber "
+      formControlName="number"
+    />
+        </div>
+        <div class="form-group">
+            <label for="balance">Balance</label>
+            <input
+      type="text"
+      placeholder="Enter Balance "
+      formControlName="number"
+    />
+        </div>
+        <div class="form-group">
+            <label for="gst">Gstnumber</label>
+            <input
+      type="text"
+      placeholder="Enter Gstnumber "
+      formControlName="gst"
+    />
+        </div>
+
+        
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="userRegister()">ADD Vendor</button>
+           
+        </div>
+    </form>
+</div>
